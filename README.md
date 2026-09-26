@@ -1,5 +1,11 @@
 # OmniResolve AI — AI Complaint Investigation & Resolution Platform
 
+![Next.js](https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
 > **"Every Complaint. Any Domain. One Intelligent Resolution Platform."**  
 > *Secondary Tagline: "Companies manage less. We investigate, route and resolve more — at lower operational cost."*  
 > *Product Statement: "You submit the complaint. We investigate it. The right expert solves it. Your organization gets the insight."*
@@ -109,6 +115,27 @@ This launches:
 - `PostgreSQL 16` on port `5432`
 - `FastAPI Backend` on port `8000`
 - `Next.js Frontend` on port `3000`
+
+---
+
+## 🌍 Cloud Deployment (Vercel & Render)
+
+OmniResolve AI is designed for seamless, zero-config deployment to modern cloud platforms.
+
+### 1. Frontend (Vercel)
+- **Platform:** [Vercel](https://vercel.com)
+- **Root Directory:** `frontend`
+- **Framework Preset:** Next.js (Auto-detected)
+- **Build Command:** `npm run build` (Default)
+- **Environment Variables:** Add `NEXT_PUBLIC_API_URL` pointing to your deployed backend URL.
+
+### 2. Backend (Render Web Service)
+- **Platform:** [Render](https://render.com)
+- **Type:** Web Service
+- **Root Directory:** `backend`
+- **Build Command:** `pip install -r requirements.txt`
+- **Start Command:** `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
+- *(Note: Render automatically injects the `$PORT` variable)*
 
 ---
 
